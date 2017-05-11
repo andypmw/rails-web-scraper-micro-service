@@ -2,22 +2,22 @@ require 'test_helper'
 
 class IndexJobControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get index_job_index_url
+    get index_path
     assert_response :success
   end
 
   test "should get show" do
-    get index_job_show_url
+    get show_path(123)
     assert_response :success
   end
 
   test "should get create" do
-    get index_job_create_url
+    get create_path
     assert_response :success
   end
 
   test "should get cancel" do
-    get index_job_cancel_url
+    get cancel_path
     assert_response :success
   end
 
