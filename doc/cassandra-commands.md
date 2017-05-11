@@ -2,7 +2,7 @@
 
 ### Display all keyspaces
 ```
-DESCRIBE keyspaces;
+DESCRIBE KEYSPACES;
 ```
 
 ### Create a keyspace
@@ -37,6 +37,16 @@ CREATE TABLE "index_job" (
   "contents" set<frozen<"parsed_content">>,
   PRIMARY KEY ("customer_id", "job_id")
 );
+```
+
+### Show a table on keyspace
+```
+DESCRIBE TABLES;
+```
+
+### Describe a table schema
+```
+DESCRIBE table_name;
 ```
 
 ### Insert row to a table
