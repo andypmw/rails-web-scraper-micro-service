@@ -27,6 +27,9 @@ gem 'puma', '~> 3.0'
 
 gem 'minitest', '~> 5.10', '!= 5.10.2'
 
+gem 'cequel'
+gem 'activemodel-serializers-xml'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
