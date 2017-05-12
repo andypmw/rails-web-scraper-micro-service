@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/andypmw/rails-web-scraper-micro-service.svg?branch=master)](https://travis-ci.org/andypmw/rails-web-scraper-micro-service)
 [![codecov](https://codecov.io/gh/andypmw/rails-web-scraper-micro-service/branch/master/graph/badge.svg)](https://codecov.io/gh/andypmw/rails-web-scraper-micro-service)
+[![Known Vulnerabilities](https://snyk.io/test/github/andypmw/rails-web-scraper-micro-service/badge.svg)](https://snyk.io/test/github/andypmw/rails-web-scraper-micro-service)
 
 # README
 
