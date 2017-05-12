@@ -29,6 +29,7 @@ gem 'minitest', '~> 5.10', '!= 5.10.2'
 
 gem 'cequel'
 gem 'activemodel-serializers-xml'
+gem 'sidekiq', '~> 5.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
