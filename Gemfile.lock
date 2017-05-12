@@ -51,13 +51,19 @@ GEM
     cequel (3.0.0)
       activemodel (>= 4.0)
       cassandra-driver (~> 3.0)
+    codecov (0.1.10)
+      json
+      simplecov
+      url
     concurrent-ruby (1.0.5)
+    docile (1.1.5)
     erubis (2.7.0)
     ffi (1.9.18)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     i18n (0.8.1)
     ione (1.2.4)
+    json (2.1.0)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -105,6 +111,11 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    simplecov (0.14.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     spring (2.0.1)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -122,6 +133,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    url (0.3.2)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -133,6 +145,7 @@ DEPENDENCIES
   activemodel-serializers-xml
   byebug
   cequel
+  codecov
   listen (~> 3.0.5)
   minitest (~> 5.10, != 5.10.2)
   puma (~> 3.0)

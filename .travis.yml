@@ -7,4 +7,4 @@ rvm:
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 script:
-  - 'bundle exec rails t'
+  - 'CODECOV_TOKEN=18c1f6b2-e46a-4fe0-86d1-7e634e441410 bundle exec rails t'

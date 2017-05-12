@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/andypmw/rails-web-scraper-micro-service/branch/master/graph/badge.svg)](https://codecov.io/gh/andypmw/rails-web-scraper-micro-service)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
