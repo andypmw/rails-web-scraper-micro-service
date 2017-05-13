@@ -21,7 +21,7 @@ class IndexJobController < ApplicationController
       } and return
     end
 
-    unless page_url =~ /\A#{URI::regexp(['http', 'https'])}\z/
+    unless page_url =~ /\A#{URI.regexp(['http', 'https'])}\z/
       render status: 400, json: { 
         status: 400, 
         error: 'Bad Request', 
