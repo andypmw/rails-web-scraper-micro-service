@@ -54,6 +54,4 @@ class IndexJobController < ApplicationController
     render status: 201, json: { index_job_id: index_job_id }
   end
 
-  def cancel
-  end
 end
