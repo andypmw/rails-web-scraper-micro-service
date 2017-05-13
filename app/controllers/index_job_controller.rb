@@ -12,7 +12,6 @@ class IndexJobController < ApplicationController
 
   def show_customers_jobs
     @customer = Customer.find(params['customer_id'])
-    index_jobs = Customer.find(params['customer_id']).index_jobs
     render status: 200, template: 'index_job/show_customers_jobs', formats: :json
   end
 
