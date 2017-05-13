@@ -7,4 +7,6 @@ class Customer
   column :key_secret, :text
   column :is_active, :boolean
   timestamps
+
+  has_many :index_jobs
 end

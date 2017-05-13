@@ -29,6 +29,9 @@ gem 'minitest', '~> 5.10', '!= 5.10.2'
 
 gem 'cequel'
 gem 'activemodel-serializers-xml'
+gem 'sidekiq', '~> 5.0'
+gem 'capybara', '~> 2.14'
+gem 'poltergeist', '~> 1.15'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,6 +43,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'rake', '~> 12.0'
 end
 
 gem 'codecov', :require => false, :group => :test

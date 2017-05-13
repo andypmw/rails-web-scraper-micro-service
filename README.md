@@ -6,25 +6,53 @@
 
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Get up and running
 
-Things you may want to cover:
+### Ruby version
+```
+2.3.3
+```
 
-* Ruby version
+### System dependencies
+1. PhantomJS
+1. Redis
+1. Sidekiq service
+1. Apache Cassandra 3
 
-* System dependencies
+### Database creation
+```
+rake cequel:keyspace:create
+rake cequel:migrate
+```
 
-* Configuration
+### Database initialization
+```
+rails db:seed
+```
 
-* Database creation
+### How to run the test suite
+```
+rails t
+```
 
-* Database initialization
+### Deployment instruction
+```
+please update.
+```
 
-* How to run the test suite
+## Microservice detail
 
-* Services (job queues, cache servers, search engines, etc.)
+### Solution architecture
+```
+please update
+```
 
-* Deployment instructions
+### Scaling strategy
+```
+please update
+```
 
-* ...
+### Assumptions
+1. first assumption
+1. second assumption
+1. third assumption
