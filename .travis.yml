@@ -9,6 +9,7 @@ services:
   - cassandra
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
+  - bundle install
   - RAILS_ENV=test rake cequel:keyspace:create
   - RAILS_ENV=test rake rails cequel:migrate
 script:
