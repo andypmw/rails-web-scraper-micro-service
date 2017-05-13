@@ -178,6 +178,7 @@ DEPENDENCIES
   poltergeist (~> 1.15)
   puma (~> 3.0)
   rails (~> 5.0.2)
+  rake (~> 12.0)
   sidekiq (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
