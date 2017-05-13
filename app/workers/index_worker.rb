@@ -13,7 +13,7 @@ class IndexWorker
 
     Capybara.current_driver = :poltergeist
     Capybara.run_server = false
-    if uri.scheme.nil? then
+    if uri.scheme.nil?
       Capybara.app_host = "http://#{uri.host}" 
     else
       Capybara.app_host = "#{uri.scheme}://#{uri.host}"
@@ -72,7 +72,7 @@ class IndexWorker
     end
 
 
-    if page.status_code == '200' then
+    if page.status_code == '200'
       index_job.status = :success
     else
       index_job.status = :fail
