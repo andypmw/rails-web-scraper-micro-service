@@ -44,6 +44,12 @@ rails db:seed
 rails t
 ```
 
+### How to run on development mode
+Please run below command, the Rails app will listen on port 3000. And then use API tools such as Postman to interact with it:
+```
+rails s
+```
+
 ## API Endpoints
 ```
 POST /index-job : to create a new index job
