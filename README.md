@@ -28,10 +28,10 @@ bundle install
 
 ### Database creation
 ```
+RAILS_ENV=test rake cequel:keyspace:create
+RAILS_ENV=test rake cequel:migrate
 RAILS_ENV=development rake cequel:keyspace:create
 RAILS_ENV=development rake cequel:migrate
-RAILS_ENV=development test cequel:keyspace:create
-RAILS_ENV=development test cequel:migrate
 ```
 
 ### Database initialization
@@ -48,7 +48,7 @@ rails t
 ```
 POST /index-job : to create a new index job
 GET  /index-job/(customer-id) : to get a customer's index jobs
-GET  /index-job/(customer-id)/(index-job-id) : to get an index job contents
+GET  /index-job/(customer-id)/(index-job-id) : to get an index job's contents
 ```
 
 ## Microservice detail
