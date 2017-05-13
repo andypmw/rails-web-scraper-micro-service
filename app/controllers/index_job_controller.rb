@@ -2,10 +2,22 @@ require 'securerandom'
 require 'uri'
 
 class IndexJobController < ApplicationController
-  def index
+  def say_hi
+    render status: 200, json: {
+      message: 'WebScraper micro service',
+      maintainer: 'Andy Primawan',
+      readme: 'https://github.com/andypmw/rails-web-scraper-micro-service'
+    }
   end
 
-  def show
+  def show_customers_jobs
+    @customer = Customer.find(params['customer_id'])
+    render status: 200, template: 'index_job/show_customers_jobs', formats: :json
+  end
+
+  def show_an_index_job
+    @job = Customer.find(params['customer_id']).index_jobs.find(params['index_job_id'])
+    render status: 200, template: 'index_job/show_an_index_job', formats: :json
   end
 
   def create
@@ -41,6 +53,4 @@ class IndexJobController < ApplicationController
     render status: 201, json: { index_job_id: index_job_id }
   end
 
-  def cancel
-  end
 end
