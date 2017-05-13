@@ -7,5 +7,5 @@ class IndexJob
   column :status, :enum, values: { wait: 1, process: 2, success: 3, fail: 4 }
   timestamps
 
-  has_many :index_jobs_contents
+  has_many :index_job_contents
 end

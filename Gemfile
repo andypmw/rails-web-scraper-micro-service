@@ -32,6 +32,7 @@ gem 'activemodel-serializers-xml'
 gem 'sidekiq', '~> 5.0'
 gem 'capybara', '~> 2.14'
 gem 'poltergeist', '~> 1.15'
+gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,6 +48,9 @@ end
 
 group :test do
   gem 'rake', '~> 12.0'
+  
+  # For better display
+  gem 'minitest-reporters'
 end
 
 gem 'codecov', :require => false, :group => :test
