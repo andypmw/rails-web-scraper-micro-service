@@ -48,6 +48,9 @@ end
 
 group :test do
   gem 'rake', '~> 12.0'
+  
+  # For better display
+  gem 'minitest-reporters'
 end
 
 gem 'codecov', :require => false, :group => :test
