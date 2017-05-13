@@ -7,28 +7,31 @@
 # Rails Web Scraper Micro Service
 This micro service has two functions:
 1. Accept HTTP or HTTPS URL then parse and store contents at Cassandra DB
-1. Return parsed and stored contents for a URL from Cassandra DB
+1. Return parsed and stored contents for an URL from Cassandra DB
 
 ## Elastic and High Available Deployment Architecture
 ![Alt text](doc/AWS-deploy-architecture.png?raw=true "Elastic and high available deployment architecture for the micro service")
 
 ## Get up and running
 
-### Ruby version
-```
-2.3.3
-```
-
 ### System dependencies
+1. Ruby, minimum version: 2.3.3
 1. PhantomJS (with PhantomJS we can get content from a dynamic JavaScript website)
 1. Redis
 1. Sidekiq service
 1. Apache Cassandra 3.x
 
+### Ruby on Rails initialization
+```
+bundle install
+```
+
 ### Database creation
 ```
-rake cequel:keyspace:create
-rake cequel:migrate
+RAILS_ENV=development rake cequel:keyspace:create
+RAILS_ENV=development rake cequel:migrate
+RAILS_ENV=development test cequel:keyspace:create
+RAILS_ENV=development test cequel:migrate
 ```
 
 ### Database initialization
@@ -41,9 +44,11 @@ rails db:seed
 rails t
 ```
 
-### Deployment instruction
+## API Endpoints
 ```
-please update.
+POST /index-job : to create a new index job
+GET  /index-job/(customer-id) : to get a customer's index jobs
+GET  /index-job/(customer-id)/(index-job-id) : to get an index job contents
 ```
 
 ## Microservice detail
