@@ -4,6 +4,9 @@ language: ruby
 cache: bundler
 rvm:
   - 2.3.3
+services:
+  - redis-server
+  - cassandra
 before_install:
   - "echo 'gem: --no-ri --no-rdoc' > ~/.gemrc"
 script:
