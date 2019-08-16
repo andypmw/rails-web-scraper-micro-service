@@ -30,8 +30,8 @@ gem 'minitest', '~> 5.10', '!= 5.10.2'
 gem 'cequel'
 gem 'activemodel-serializers-xml'
 gem 'sidekiq', '~> 5.0'
-gem 'capybara', '~> 2.14'
-gem 'poltergeist', '~> 1.15'
+gem 'capybara', '~> 2.14', '>= 2.14.0'
+gem 'poltergeist', '~> 1.15', '>= 1.15.0'
 gem 'jbuilder', '~> 2.6', '>= 2.6.4'
 
 group :development, :test do
