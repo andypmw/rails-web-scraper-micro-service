@@ -106,7 +106,7 @@ GEM
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     public_suffix (2.0.5)
-    puma (3.8.2)
+    puma (3.12.2)
     rack (2.0.2)
     rack-protection (2.0.0)
       rack
@@ -189,7 +189,7 @@ DEPENDENCIES
   minitest (~> 5.10, != 5.10.2)
   minitest-reporters
   poltergeist (~> 1.15)
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.0.2)
   rake (~> 12.0)
   sidekiq (~> 5.0)
