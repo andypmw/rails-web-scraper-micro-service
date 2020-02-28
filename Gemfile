@@ -47,7 +47,7 @@ group :development do
 end
 
 group :test do
-  gem 'rake', '~> 12.0'
+  gem 'rake', '~> 12.3'
   
   # For better display
   gem 'minitest-reporters'
